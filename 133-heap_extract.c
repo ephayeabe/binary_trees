@@ -38,7 +38,7 @@
  * @b: second node
  * Return: pointer to root
  */
-bst_t *swap(bst_t *a, bst_t *b)
+bst_t *swap_node(bst_t *a, bst_t *b)
 {
 	bst_t a_copy = INIT_NODE;
 
@@ -140,7 +140,7 @@ heap_t *perc_down(heap_t *node)
 		next = node->right;
 	if (next != node)
 	{
-		swap(node, next);
+		swap_node(node, next);
 		perc_down(node);
 	}
 	return (next);
