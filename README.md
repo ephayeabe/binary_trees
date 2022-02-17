@@ -154,3 +154,21 @@ typedef struct binary_tree_s heap_t;
 - Where tree is a pointer to the root node of the tree to count the number of nodes
 - If tree is NULL, the function must return 0
 - A NULL pointer is not a node
+
+#### 14. Balance factor
+##### Write a function that measures the balance factor of a binary tree
+- Prototype: int binary_tree_balance(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to measure the balance factor
+- If tree is NULL, return 0
+
+#### 15. Is full
+##### Write a function that checks if a binary tree is full
+- Prototype: int binary_tree_is_full(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to check
+- If tree is NULL, your function must return 0
+
+#### 16. Is perfect
+##### Write a function that checks if a binary tree is perfect
+- Prototype: int binary_tree_is_perfect(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to check
+- If tree is NULL, your function must return 0
