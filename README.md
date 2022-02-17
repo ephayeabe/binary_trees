@@ -1,4 +1,4 @@
-BB# 0x1D. C - Binary trees
+# 0x1D. C - Binary trees
 ## Learning Objectives
 ### What students should learn 
 - What is a binary tree
@@ -316,3 +316,42 @@ typedef struct binary_tree_s heap_t;
 -	If the node to be deleted has two children, it must be replaced with its first in-order successor (not predecessor)
 -	After deletion of the desired node, the tree must be rebalanced if necessary
 -	Your function must return a pointer to the new root node of the tree after removing the desired value, and after rebalancing
+
+#### 34. AVL - From sorted array
+
+##### Write a function that builds an AVL tree from an array
+- Prototype: avl_t *sorted_array_to_avl(int *array, size_t size);
+- Where array is a pointer to the first element of the array to be converted
+- And size is the number of element in the array
+- Your function must return a pointer to the root node of the created AVL tree, or NULL on failure
+- You can assume there will be no duplicate value in the array
+- You are not allowed to rotate
+- You can only have 2 functions in your file
+
+#### 35. Big O #AVL Tree
+##### What are the average time complexities of those operations on an AVL Tree (one answer per line):
+- Inserting the value n
+- Removing the node with the value n
+- Searching for a node in an AVL tree of size n
+
+#### 36. Is Binary heap
+##### Write a function that checks if a binary tree is a valid Max Binary Heap
+- Prototype: int binary_tree_is_heap(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to check
+- Your function must return 1 if tree is a valid Max Binary Heap, and 0 otherwise
+- If tree is NULL, return 0
+##### Properties of a Max Binary Heap:
+
+- it's a complete tree
+- In a Max Binary Heap, the value at root must be maximum among all values present in Binary Heap
+- The last property must be recursively true for all nodes in Binary Tree
+It
+#### 37. Heap - Insert
+##### Write a function that inserts a value in Max Binary Heap
+- Prototype: heap_t *heap_insert(heap_t **root, int value)
+- Where root is a double pointer to the root node of the Heap to insert the value
+- And value is the value to store in the node to be inserted
+- Your function must return a pointer to the created node, or NULL on failure
+- If the address stored in root is NULL, the created node must become the root node.
+- You have to respect a Max Heap ordering
+- You are allowed to have up to 6 functions in your file
