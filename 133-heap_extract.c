@@ -33,7 +33,7 @@
 	}
 
 /**
- *swap - swaps two nodes in binary tree
+ *swap_node - swaps two nodes in binary tree
  *@a: first node
  *@b: second node
  *Return: pointer to root
