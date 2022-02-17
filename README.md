@@ -122,3 +122,35 @@ typedef struct binary_tree_s heap_t;
 - Where tree is a pointer to the root node of the tree to traverse
 - And func is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.
 - If tree or func is NULL, do nothing
+
+#### 9. Height
+##### Write a function that measures the height of a binary tree
+- Prototype: size_t binary_tree_height(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to measure the height.
+- If tree is NULL, your function must return 0
+
+#### 10. Depth
+##### Write a function that measures the depth of a node in a binary tree
+- Prototype: size_t binary_tree_depth(const binary_tree_t *tree);
+- Where tree is a pointer to the node to measure the depth
+- If tree is NULL, your function must return 0
+
+#### 11. Size
+##### Write a function that measures the size of a binary tree
+- Prototype: size_t binary_tree_size(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to measure the size
+- If tree is NULL, the function must return 0
+
+#### 12. Leaves
+##### Write a function that counts the leaves in a binary tree
+- Prototype: size_t binary_tree_leaves(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to count the number of leaves
+- If tree is NULL, the function must return 0
+- A NULL pointer is not a leaf
+
+#### 13. Nodes
+##### Write a function that counts the nodes with at least 1 child in a binary tree
+- Prototype: size_t binary_tree_nodes(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to count the number of nodes
+- If tree is NULL, the function must return 0
+- A NULL pointer is not a node
