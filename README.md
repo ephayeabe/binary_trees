@@ -1,4 +1,4 @@
-# 0x1D. C - Binary trees
+BB# 0x1D. C - Binary trees
 ## Learning Objectives
 ### What students should learn 
 - What is a binary tree
@@ -275,3 +275,44 @@ typedef struct binary_tree_s heap_t;
 - Inserting the value n
 - Removing the node with the value n
 - Searching for a node in a BST of size n
+
+
+#### 30. Is AVL
+##### Write a function that checks if a binary tree is a valid AVL Tree
+
+- Prototype: int binary_tree_is_avl(const binary_tree_t *tree);
+- Where tree is a pointer to the root node of the tree to check
+- Your function must return 1 if tree is a valid AVL Tree, and 0 otherwise
+- If tree is NULL, return 0
+##### Properties of an AVL Tree:
+
+- An AVL Tree is a BST
+- The difference between heights of left and right subtrees cannot be more than one
+- The left and right subtrees must also be AVL trees
+
+#### 31. AVL - Insert
+###### Write a function that inserts a value in an AVL Tree
+-      Prototype: avl_t *avl_insert(avl_t **tree, int value);
+-      Where tree is a double pointer to the root node of the AVL tree for inserting the value
+-      And value is the value to store in the node to be inserted
+-      Your function must return a pointer to the created node, or NULL on failure
+-      If the address stored in tree is NULL, the created node must become the root node.
+-      The resulting tree after insertion, must be a balanced AVL Tree
+#### 32. AVL - Array to AVL
+###### Write a function that builds an AVL tree from an array
+-      Prototype: avl_t *array_to_avl(int *array, size_t size);
+-      Where array is a pointer to the first element of the array to be converted
+-      And size is the number of element in the array
+-      Your function must return a pointer to the root node of the created AVL tree, or NULL on failure
+-      If a value of the array is already present in the tree, this value must be ignored
+
+####   33. AVL - Remove
+######  Write a function that removes a node from an AVL tree
+
+-	Prototype: avl_t *avl_remove(avl_t *root, int value);
+-	Where root is a pointer to the root node of the tree for removing a node
+-	And value is the value to remove in the tree
+-	Once located, the node containing a value equals to value must be removed and freed
+-	If the node to be deleted has two children, it must be replaced with its first in-order successor (not predecessor)
+-	After deletion of the desired node, the tree must be rebalanced if necessary
+-	Your function must return a pointer to the new root node of the tree after removing the desired value, and after rebalancing
