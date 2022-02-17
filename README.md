@@ -243,3 +243,35 @@ typedef struct binary_tree_s heap_t;
 - Your function must return a pointer to the created node, or NULL on failure
 - If the address stored in tree is NULL, the created node must become the root node.
 - If the value is already present in the tree, it must be ignored
+
+#### 26. BST - Array to BST
+##### Write a function that builds a Binary Search Tree from an array
+
+- Prototype: bst_t *array_to_bst(int *array, size_t size);
+- Where array is a pointer to the first element of the array to be converted
+- And size is the number of element in the array
+- Your function must return a pointer to the root node of the created BST, or NULL on failure
+- If a value of the array is already present in the tree, this value must be ignored
+
+#### 27. BST - Search
+##### Write a function that searches for a value in a Binary Search Tree
+- Prototype: bst_t *bst_search(const bst_t *tree, int value);
+- Where tree is a pointer to the root node of the BST to search
+- And value is the value to search in the tree
+- Your function must return a pointer to the node containing a value equals to value
+- If tree is NULL or if nothing is found, your function must return NULL
+
+#### 28. BST - Remove
+##### Write a function that removes a node from a Binary Search Tree
+- Prototype: bst_t *bst_remove(bst_t *root, int value);
+- Where root is a pointer to the root node of the tree where you will remove a node
+- And value is the value to remove in the tree
+- Once located, the node containing a value equals to value must be removed and freed
+- If the node to be deleted has two children, it must be replaced with its first in-order successor (not predecessor)
+- Your function must return a pointer to the new root node of the tree after removing the desired value
+
+#### 29. Big O #BST
+##### What are the average time complexities of those operations on a Binary Search Tree (one answer per line):
+- Inserting the value n
+- Removing the node with the value n
+- Searching for a node in a BST of size n
