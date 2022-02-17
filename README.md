@@ -228,8 +228,8 @@ typedef struct binary_tree_s heap_t;
 - Where tree is a pointer to the root node of the tree to check
 - Your function must return 1 if tree is a valid BST, and 0 otherwise
 - If tree is NULL, return 0
-#####Properties of a Binary Search Tree:
 
+##### Properties of a Binary Search Tree:
 - The left subtree of a node contains only nodes with values less than the s value
 - The right subtree of a node contains only nodes with values greater than the s value
 - The left and right subtree each must also be a binary search tree
@@ -292,19 +292,19 @@ typedef struct binary_tree_s heap_t;
 
 #### 31. AVL - Insert
 ###### Write a function that inserts a value in an AVL Tree
--      Prototype: avl_t *avl_insert(avl_t **tree, int value);
--      Where tree is a double pointer to the root node of the AVL tree for inserting the value
--      And value is the value to store in the node to be inserted
--      Your function must return a pointer to the created node, or NULL on failure
--      If the address stored in tree is NULL, the created node must become the root node.
--      The resulting tree after insertion, must be a balanced AVL Tree
+- Prototype: avl_t *avl_insert(avl_t **tree, int value);
+- Where tree is a double pointer to the root node of the AVL tree for inserting the value
+- And value is the value to store in the node to be inserted
+- Your function must return a pointer to the created node, or NULL on failure
+- If the address stored in tree is NULL, the created node must become the root node.
+- The resulting tree after insertion, must be a balanced AVL Tree
 #### 32. AVL - Array to AVL
 ###### Write a function that builds an AVL tree from an array
--      Prototype: avl_t *array_to_avl(int *array, size_t size);
--      Where array is a pointer to the first element of the array to be converted
--      And size is the number of element in the array
--      Your function must return a pointer to the root node of the created AVL tree, or NULL on failure
--      If a value of the array is already present in the tree, this value must be ignored
+- Prototype: avl_t *array_to_avl(int *array, size_t size);
+- Where array is a pointer to the first element of the array to be converted
+- And size is the number of element in the array
+- Your function must return a pointer to the root node of the created AVL tree, or NULL on failure
+- If a value of the array is already present in the tree, this value must be ignored
 
 ####   33. AVL - Remove
 ######  Write a function that removes a node from an AVL tree
@@ -361,3 +361,4 @@ It
 - Where array is a pointer to the first element of the array to be converted
 - And size is the number of element in the array
 - Your function must return a pointer to the root node of the created Binary Heap, or NULL on failure
+
