@@ -33,12 +33,12 @@
 	}
 
 /**
- *swap_node - swaps two nodes in binary tree
- *@a: first node
- *@b: second node
- *Return: pointer to root
+ * swap_node - swaps two nodes in binary tree
+ * @a: first node
+ * @b: second node
+ * Return: pointer to root
  */
-bst_t* swap_node(bst_t *a, bst_t *b)
+bst_t *swap_node(bst_t *a, bst_t *b)
 {
 	bst_t a_copy = INIT_NODE;
 
@@ -82,9 +82,9 @@ bst_t* swap_node(bst_t *a, bst_t *b)
 }
 
 /**
- *binary_tree_size - measures the size of a binary tree
- *@tree: input binary tree
- *Return: number of descendant child nodes
+ * binary_tree_size - measures the size of a binary tree
+ * @tree: input binary tree
+ * Return: number of descendant child nodes
  */
 size_t binary_tree_size(const binary_tree_t *tree)
 {
@@ -95,18 +95,17 @@ size_t binary_tree_size(const binary_tree_t *tree)
 }
 
 /**
- *swap_head - helper func to swap head and node
- *@head: pointer to head
- *@node: pointer to node
- *Return: pointer to severed head of tree
+ * swap_head - helper func to swap head and node
+ * @head: pointer to head
+ * @node: pointer to node
+ * Return: pointer to severed head of tree
  */
-heap_t* swap_head(heap_t *head, heap_t *node)
+heap_t *swap_head(heap_t *head, heap_t *node)
 {
 	if (node->parent->left == node)
 	{
 		node->parent->left = NULL;
-	}
-	else
+	} else
 		node->parent->right = NULL;
 	node->parent = NULL;
 	node->left = head->left;
@@ -119,11 +118,11 @@ heap_t* swap_head(heap_t *head, heap_t *node)
 }
 
 /**
- *perc_down - percolate head into correct position
- *@node: pointer to head
- *Return: pointer to head of tree
+ * perc_down - percolate head into correct position
+ * @node: pointer to head
+ * Return: pointer to head of tree
  */
-heap_t* perc_down(heap_t *node)
+heap_t *perc_down(heap_t *node)
 {
 	int max;
 	heap_t *next = node;
@@ -148,9 +147,9 @@ heap_t* perc_down(heap_t *node)
 }
 
 /**
- *heap_extract - extracts the root node of a Max Binary Heap
- *@root: double pointer to root of tree
- *Return: value stored in the root node
+ * heap_extract - extracts the root node of a Max Binary Heap
+ * @root: double pointer to root of tree
+ * Return: value stored in the root node
  */
 int heap_extract(heap_t **root)
 {
@@ -159,7 +158,7 @@ int heap_extract(heap_t **root)
 	int res;
 	heap_t *tmp, *head;
 
-	if (!root || ! *root)
+	if (!root || !*root)
 		return (0);
 	SETUP_NODE_BLOC;
 	if (size == 1)
