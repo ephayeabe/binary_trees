@@ -9,15 +9,15 @@
  */
 heap_t *array_to_heap(int *array, size_t size)
 {
-  heap_t *tree;
-  size_t i;
+	heap_t *tree;
+	size_t i;
 
-  tree = NULL;
+	tree = NULL;
 
-  for (i = 0; i < size; i++)
-    {
-      heap_insert(&tree, array[i]);
-    }
+	for (i = 0; i < size; i++)
+	{
+		heap_insert(&tree, array[i]);
+	}
 
-  return (tree);
+	return (tree);
 }
