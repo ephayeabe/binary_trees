@@ -1,4 +1,4 @@
-# 0x1D. C - Binary trees
+B# 0x1D. C - Binary trees
 ## Learning Objectives
 ### What students should learn 
 - What is a binary tree
@@ -57,8 +57,8 @@ Max Binary Heap
 typedef struct binary_tree_s heap_t;
 ```
 
-###TASKS
-####0. New node
+### TASKS
+#### 0. New node
 ##### Write a function that creates a binary tree node
 - Prototype: binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 - Where parent is a pointer to the parent node of the node to create
