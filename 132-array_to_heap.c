@@ -6,6 +6,7 @@
  * @size: number of element in the array
  * Return: pointer to the root node of the AVL tree
  */
+
 heap_t *array_to_heap(int *array, size_t size)
 {
 	heap_t *tree;
